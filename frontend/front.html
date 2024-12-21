@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Романтичний банкінг</title>
+    <title>Реєстрація / Вхід</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Вітаємо в романтичному банкінгу!</h1>
-    <form id="loginForm">
-        <input type="text" id="username" placeholder="Введіть ваше ім'я" required>
-        <input type="password" id="password" placeholder="Пароль" required>
-        <button type="submit">Увійти</button>
-    </form>
-<script src="script.js"></script>
+    <div class="container">
+        <h1>Ласкаво просимо</h1>
+        <input type="text" placeholder="Ім'я" id="username" required>
+        <input type="password" placeholder="Пароль" id="password" required>
+        <button id="register-btn">Реєстрація</button>
+        <button id="login-btn">Вхід</button>
+    </div>
+
+    <div class="hearts-container">
+        <div class="heart" style="top: 20%; left: 30%; animation-delay: 0s;"></div>
+        <div class="heart" style="top: 50%; left: 60%; animation-delay: 1s;"></div>
+        <div class="heart" style="top: 70%; left: 40%; animation-delay: 2s;"></div>
+        <div class="heart" style="top: 10%; left: 70%; animation-delay: 0.5s;"></div>
+        <div class="heart" style="top: 80%; left: 10%; animation-delay: 1.5s;"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
