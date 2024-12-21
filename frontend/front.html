@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Романтичний банкінг</title>
+</head>
+<body>
+    <h1>Вітаємо в романтичному банкінгу!</h1>
+    <form id="loginForm">
+        <input type="text" id="username" placeholder="Введіть ваше ім'я" required>
+        <input type="password" id="password" placeholder="Пароль" required>
+        <button type="submit">Увійти</button>
+    </form>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (username && password) {
+                alert("Вітаємо, " + username + "! Ви успішно увійшли.");
+            } else {
+                alert("Будь ласка, заповніть всі поля.");
+            }
+        });
+    </script>
+</body>
+</html>
